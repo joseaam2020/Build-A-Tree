@@ -5,11 +5,10 @@ using UnityEngine.InputSystem;
 
 public class Test : MonoBehaviour
 {
-    puc
 
     void OnPlayerJoined()
-    { 
-        
+    {
+        Debug.Log("Yes");
     }
         
 }

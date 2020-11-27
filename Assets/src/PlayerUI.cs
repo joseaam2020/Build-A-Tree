@@ -1,0 +1,57 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PlayerUI : MonoBehaviour
+{
+    public GameObject[] imagenes;
+    private InputControl inputControl;
+    public int indice = 0;
+
+    void Awake()
+    {
+        inputControl = new InputControl();
+        UpdateImage();
+    }
+
+    public void UpdateImage()
+    {  
+        if (imagenes.Length > 0)
+        {
+            Debug.Log("Indice");
+            Debug.Log(indice);
+            Debug.Log("largo");
+            Debug.Log(imagenes.Length);
+            foreach (GameObject imagen in imagenes)
+            {
+                imagen.SetActive(false);
+            }
+            imagenes[indice].SetActive(true);
+            Debug.Log(imagenes[indice].name);
+        }
+       
+    }
+
+    public void onChange() 
+    {
+        float cambio = inputControl.UI.Change.ReadValue<float>();
+        sumarIndice((int) cambio);
+    }
+
+    public void sumarIndice(int cambio)
+    {
+        indice += (int)cambio;
+        if (indice < 0)
+        {
+            indice = imagenes.Length - 1;
+        } else if (indice > imagenes.Length-1)
+        {
+            indice = 0;
+        }
+    }
+
+    public void UpdateChange()
+    {
+        SendMessage("onChange");
+    }
+}
