@@ -25,7 +25,12 @@ public class StartServer implements Runnable{
             while(true){
 
                 try{
-                    String message = in.readUTF();
+                    try {
+                        String message = in.readUTF();
+                        System.out.println(message);
+                    }catch(SocketException e3){
+                        System.exit(0);
+                    }
 
                     //COLOCAR SPLIT
 
