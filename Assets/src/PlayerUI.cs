@@ -18,16 +18,11 @@ public class PlayerUI : MonoBehaviour
     {  
         if (imagenes.Length > 0)
         {
-            Debug.Log("Indice");
-            Debug.Log(indice);
-            Debug.Log("largo");
-            Debug.Log(imagenes.Length);
             foreach (GameObject imagen in imagenes)
             {
                 imagen.SetActive(false);
             }
             imagenes[indice].SetActive(true);
-            Debug.Log(imagenes[indice].name);
         }
        
     }
