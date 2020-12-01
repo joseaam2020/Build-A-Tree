@@ -36,6 +36,9 @@ public class Challenge {
                 challenge1.setRoot(challenge1.insert(challenge1.getRoot(), num_in));
                 num_in++;
             }
+            int time = 251;
+            Control.getInstance().setTime1(time);
+
 
         } else{
             AVLTree challenge2 = new AVLTree();
@@ -44,11 +47,13 @@ public class Challenge {
                 challenge2.setRoot(challenge2.insert(challenge2.getRoot(), num_in));
                 num_in++;
             }
+            int time = 321;
+            Control.getInstance().setTime1(time);
         }
     }
 
     public void BSTChallenge(){
-
+        //FALTA ARBOL
     }
 
     public void BChallenge(){
@@ -62,6 +67,8 @@ public class Challenge {
                 challenge1.Insert(num_in);
                 num_in++;
             }
+            int time = 221;
+            Control.getInstance().setTime1(time);
         } else{
             BTree challenge2 = new BTree(5);
             int num_in = 0;
@@ -69,12 +76,14 @@ public class Challenge {
                 challenge2.Insert(num_in);
                 num_in++;
             }
+            int time = 351;
+            Control.getInstance().setTime1(time);
         }
 
     }
 
     public void SplayChallenge(){
-
+        //FALTA ARBOL
     }
 
 }

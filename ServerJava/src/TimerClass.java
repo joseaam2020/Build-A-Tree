@@ -1,24 +1,24 @@
-import Server.SalidaMSG;
-
 import java.util.Timer;
 import java.util.TimerTask;
 
 public class TimerClass {
 
     private Timer timer = new Timer();
-    private int time = 0;
+    private int time;
 
     public void CountTime(int limit){
+        this.time = limit;
         TimerTask count = new TimerTask() {
             @Override
             public void run() {
 
-                if (time < limit){
-                    time++;
+                if (time >= 0){
                     SalidaMSG.getInstance().EnviarMensaje(String.valueOf(time));
+                    time--;
+                    Control.getInstance().setTime(time);
+                    //System.out.println(time);
                 } else{
                     timer.cancel();
-                    time = 0;
                     SalidaMSG.getInstance().EnviarMensaje("El tiempo ha acabado");
                 }
             }
