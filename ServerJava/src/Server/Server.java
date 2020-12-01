@@ -6,6 +6,18 @@ import java.io.*;
 public class Server implements Runnable {
 
     private int puerto = 5345;
+    private static Server instance;
+
+    private Server(){
+
+    }
+
+    public static Server getInstance(){
+        if (instance == null){
+            instance = new Server();
+        }
+        return instance;
+    }
 
 
     @Override

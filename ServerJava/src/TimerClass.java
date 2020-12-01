@@ -13,8 +13,9 @@ public class TimerClass {
             @Override
             public void run() {
 
-                if (time <= limit){
+                if (time < limit){
                     time++;
+                    SalidaMSG.getInstance().EnviarMensaje(String.valueOf(time));
                 } else{
                     timer.cancel();
                     time = 0;
