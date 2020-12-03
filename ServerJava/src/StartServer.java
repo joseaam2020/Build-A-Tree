@@ -1,5 +1,3 @@
-package Server;
-
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.net.Socket;
@@ -25,11 +23,22 @@ public class StartServer implements Runnable{
             while(true){
 
                 try{
-                    String message = in.readUTF();
+                    try {
+                        String message = in.readUTF();
+                        System.out.println(message);
 
-                    //COLOCAR SPLIT
+                        //COLOCAR SPLIT
+                        String msg[] = message.split("#");
 
-                    //COMANDOS PARA LEER EL MENSAJE
+                        if (msg[0].equals("GETCHALLENGE")){
+                            Challenge challenge = new Challenge();
+
+                        }
+
+                        //COMANDOS PARA LEER EL MENSAJE
+                    }catch(SocketException e3){
+                        System.exit(0);
+                    }
                 } catch(SocketException se){
                     se.printStackTrace();
                 }
