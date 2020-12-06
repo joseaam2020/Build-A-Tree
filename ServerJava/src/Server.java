@@ -3,8 +3,9 @@ import java.io.*;
 
 public class Server implements Runnable {
 
-    private int puerto = 5345;
+    private int puerto = 5000;
     private static Server instance;
+    private ServerSocket server;
 
     private Server(){
 
@@ -17,11 +18,14 @@ public class Server implements Runnable {
         return instance;
     }
 
+    public ServerSocket getServer() {
+        return server;
+    }
 
     @Override
     public void run() {
         try{
-            ServerSocket server = new ServerSocket(puerto);
+            server = new ServerSocket(puerto);
             System.out.println("\n  Server abierto");
 
             while (true){

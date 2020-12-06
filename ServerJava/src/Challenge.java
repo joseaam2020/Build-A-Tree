@@ -36,8 +36,10 @@ public class Challenge {
                 challenge1.setRoot(challenge1.insert(challenge1.getRoot(), num_in));
                 num_in++;
             }
-            int time = 251;
+            int time = 351;
             Control.getInstance().setTime1(time);
+            Control.getInstance().setChallenge("AVL");
+            Control.getInstance().setGoal(num_in);
 
 
         } else{
@@ -47,13 +49,16 @@ public class Challenge {
                 challenge2.setRoot(challenge2.insert(challenge2.getRoot(), num_in));
                 num_in++;
             }
-            int time = 321;
+            int time = 421;
             Control.getInstance().setTime1(time);
+            Control.getInstance().setChallenge("AVL");
+            Control.getInstance().setGoal(num_in);
         }
     }
 
     public void BSTChallenge(){
         //FALTA ARBOL
+        AVLChallenge();
     }
 
     public void BChallenge(){
@@ -67,8 +72,10 @@ public class Challenge {
                 challenge1.Insert(num_in);
                 num_in++;
             }
-            int time = 221;
+            int time = 371;
             Control.getInstance().setTime1(time);
+            Control.getInstance().setChallenge("B");
+            Control.getInstance().setGoal(num_in);
         } else{
             BTree challenge2 = new BTree(5);
             int num_in = 0;
@@ -76,14 +83,17 @@ public class Challenge {
                 challenge2.Insert(num_in);
                 num_in++;
             }
-            int time = 351;
+            int time = 491;
             Control.getInstance().setTime1(time);
+            Control.getInstance().setChallenge("B");
+            Control.getInstance().setGoal(num_in);
         }
 
     }
 
     public void SplayChallenge(){
         //FALTA ARBOL
+        BChallenge();
     }
 
 }
