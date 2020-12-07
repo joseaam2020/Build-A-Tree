@@ -111,6 +111,39 @@ public class @InputControl : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": true
                 },
                 {
+                    ""name"": ""PS4"",
+                    ""id"": ""60eed91c-d8c1-4089-9515-47896b55ac3e"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""7a2d06de-e3a3-464a-8b55-e51132b4f7e7"",
+                    ""path"": ""<DualShockGamepad>/dpad/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""89eabab0-5f03-450e-8fae-45515992269e"",
+                    ""path"": ""<DualShockGamepad>/dpad/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
                     ""name"": """",
                     ""id"": ""fe0f48f8-69c3-4644-970d-1f2410109575"",
                     ""path"": ""<Keyboard>/space"",
@@ -125,6 +158,17 @@ public class @InputControl : IInputActionCollection, IDisposable
                     ""name"": """",
                     ""id"": ""4403c6f9-ec8d-4a18-9bce-b0768f1054f6"",
                     ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f81972b5-e3b9-48fc-a65f-5de1d4092470"",
+                    ""path"": ""<DualShockGamepad>/buttonSouth"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
@@ -153,6 +197,17 @@ public class @InputControl : IInputActionCollection, IDisposable
                     ""action"": ""Punch"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""bdeefd93-2f5c-4489-b2d8-857eb04c3546"",
+                    ""path"": ""<DualShockGamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Punch"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -161,7 +216,7 @@ public class @InputControl : IInputActionCollection, IDisposable
             ""id"": ""55375ed2-8f3c-4c1a-bae3-11a5a8dff7bf"",
             ""actions"": [
                 {
-                    ""name"": ""Change"",
+                    ""name"": ""Press"",
                     ""type"": ""Button"",
                     ""id"": ""1a6a91a4-930a-4ae7-920b-d48fcda739dd"",
                     ""expectedControlType"": ""Button"",
@@ -175,6 +230,14 @@ public class @InputControl : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""NotReady"",
+                    ""type"": ""Button"",
+                    ""id"": ""616d23cf-bd25-4c25-b5ca-ddd15855b0f9"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -185,29 +248,29 @@ public class @InputControl : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Change"",
+                    ""action"": ""Press"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": ""negative"",
                     ""id"": ""ef6ce8f1-58a6-4512-82c2-345759878c52"",
-                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""path"": ""<Keyboard>/upArrow"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Change"",
+                    ""action"": ""Press"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""positive"",
                     ""id"": ""93ea1d9b-2eb9-46ee-a0b7-904543730e96"",
-                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""path"": ""<Keyboard>/downArrow"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Change"",
+                    ""action"": ""Press"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -218,29 +281,62 @@ public class @InputControl : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Change"",
+                    ""action"": ""Press"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": ""negative"",
                     ""id"": ""bdb3e9e0-914b-401a-919d-a25a85b21264"",
-                    ""path"": ""<Gamepad>/dpad/left"",
+                    ""path"": ""<Gamepad>/dpad/down"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Change"",
+                    ""action"": ""Press"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""positive"",
                     ""id"": ""125fb905-e70b-435a-b595-979f59c977ba"",
-                    ""path"": ""<Gamepad>/dpad/right"",
+                    ""path"": ""<Gamepad>/dpad/up"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Change"",
+                    ""action"": ""Press"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""PS4"",
+                    ""id"": ""517a452d-536b-4377-9000-e1ce1ccf4e34"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Press"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""c1fe3991-8f5c-4db7-9744-6cf744bea610"",
+                    ""path"": ""<Gamepad>/dpad/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Press"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""fe6f0a3e-0ec0-4bdc-8401-8ffc5599ab05"",
+                    ""path"": ""<Gamepad>/dpad/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Press"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -252,6 +348,61 @@ public class @InputControl : IInputActionCollection, IDisposable
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
                     ""action"": ""Ready"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1cf86df2-6e11-47f7-abfe-fad90a92bfda"",
+                    ""path"": ""<Keyboard>/enter"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Ready"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""24f57558-f9cd-4f0e-84f1-8c134a4a70b8"",
+                    ""path"": ""<DualShockGamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Ready"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""451c85fa-4c81-49f3-97db-fa2d706a9275"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""NotReady"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e581947f-4b23-4dfc-bc28-1253583eee2d"",
+                    ""path"": ""<DualShockGamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""NotReady"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""dfb0f428-3ebc-4e96-ad90-06e404b5f7f9"",
+                    ""path"": ""<Keyboard>/backspace"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""NotReady"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -273,7 +424,13 @@ public class @InputControl : IInputActionCollection, IDisposable
         {
             ""name"": ""Gamepad"",
             ""bindingGroup"": ""Gamepad"",
-            ""devices"": []
+            ""devices"": [
+                {
+                    ""devicePath"": ""<Gamepad>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                }
+            ]
         }
     ]
 }");
@@ -284,8 +441,9 @@ public class @InputControl : IInputActionCollection, IDisposable
         m_Player_Punch = m_Player.FindAction("Punch", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
-        m_UI_Change = m_UI.FindAction("Change", throwIfNotFound: true);
+        m_UI_Press = m_UI.FindAction("Press", throwIfNotFound: true);
         m_UI_Ready = m_UI.FindAction("Ready", throwIfNotFound: true);
+        m_UI_NotReady = m_UI.FindAction("NotReady", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -384,14 +542,16 @@ public class @InputControl : IInputActionCollection, IDisposable
     // UI
     private readonly InputActionMap m_UI;
     private IUIActions m_UIActionsCallbackInterface;
-    private readonly InputAction m_UI_Change;
+    private readonly InputAction m_UI_Press;
     private readonly InputAction m_UI_Ready;
+    private readonly InputAction m_UI_NotReady;
     public struct UIActions
     {
         private @InputControl m_Wrapper;
         public UIActions(@InputControl wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Change => m_Wrapper.m_UI_Change;
+        public InputAction @Press => m_Wrapper.m_UI_Press;
         public InputAction @Ready => m_Wrapper.m_UI_Ready;
+        public InputAction @NotReady => m_Wrapper.m_UI_NotReady;
         public InputActionMap Get() { return m_Wrapper.m_UI; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -401,22 +561,28 @@ public class @InputControl : IInputActionCollection, IDisposable
         {
             if (m_Wrapper.m_UIActionsCallbackInterface != null)
             {
-                @Change.started -= m_Wrapper.m_UIActionsCallbackInterface.OnChange;
-                @Change.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnChange;
-                @Change.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnChange;
+                @Press.started -= m_Wrapper.m_UIActionsCallbackInterface.OnPress;
+                @Press.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnPress;
+                @Press.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnPress;
                 @Ready.started -= m_Wrapper.m_UIActionsCallbackInterface.OnReady;
                 @Ready.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnReady;
                 @Ready.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnReady;
+                @NotReady.started -= m_Wrapper.m_UIActionsCallbackInterface.OnNotReady;
+                @NotReady.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnNotReady;
+                @NotReady.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnNotReady;
             }
             m_Wrapper.m_UIActionsCallbackInterface = instance;
             if (instance != null)
             {
-                @Change.started += instance.OnChange;
-                @Change.performed += instance.OnChange;
-                @Change.canceled += instance.OnChange;
+                @Press.started += instance.OnPress;
+                @Press.performed += instance.OnPress;
+                @Press.canceled += instance.OnPress;
                 @Ready.started += instance.OnReady;
                 @Ready.performed += instance.OnReady;
                 @Ready.canceled += instance.OnReady;
+                @NotReady.started += instance.OnNotReady;
+                @NotReady.performed += instance.OnNotReady;
+                @NotReady.canceled += instance.OnNotReady;
             }
         }
     }
@@ -447,7 +613,8 @@ public class @InputControl : IInputActionCollection, IDisposable
     }
     public interface IUIActions
     {
-        void OnChange(InputAction.CallbackContext context);
+        void OnPress(InputAction.CallbackContext context);
         void OnReady(InputAction.CallbackContext context);
+        void OnNotReady(InputAction.CallbackContext context);
     }
 }

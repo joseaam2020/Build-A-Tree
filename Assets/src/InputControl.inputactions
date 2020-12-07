@@ -98,6 +98,39 @@
                     "isPartOfComposite": true
                 },
                 {
+                    "name": "PS4",
+                    "id": "60eed91c-d8c1-4089-9515-47896b55ac3e",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "7a2d06de-e3a3-464a-8b55-e51132b4f7e7",
+                    "path": "<DualShockGamepad>/dpad/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "89eabab0-5f03-450e-8fae-45515992269e",
+                    "path": "<DualShockGamepad>/dpad/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
                     "name": "",
                     "id": "fe0f48f8-69c3-4644-970d-1f2410109575",
                     "path": "<Keyboard>/space",
@@ -112,6 +145,17 @@
                     "name": "",
                     "id": "4403c6f9-ec8d-4a18-9bce-b0768f1054f6",
                     "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f81972b5-e3b9-48fc-a65f-5de1d4092470",
+                    "path": "<DualShockGamepad>/buttonSouth",
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
@@ -140,6 +184,17 @@
                     "action": "Punch",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bdeefd93-2f5c-4489-b2d8-857eb04c3546",
+                    "path": "<DualShockGamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Punch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -148,7 +203,7 @@
             "id": "55375ed2-8f3c-4c1a-bae3-11a5a8dff7bf",
             "actions": [
                 {
-                    "name": "Change",
+                    "name": "Press",
                     "type": "Button",
                     "id": "1a6a91a4-930a-4ae7-920b-d48fcda739dd",
                     "expectedControlType": "Button",
@@ -162,6 +217,14 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "NotReady",
+                    "type": "Button",
+                    "id": "616d23cf-bd25-4c25-b5ca-ddd15855b0f9",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -172,29 +235,29 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Change",
+                    "action": "Press",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "negative",
                     "id": "ef6ce8f1-58a6-4512-82c2-345759878c52",
-                    "path": "<Keyboard>/leftArrow",
+                    "path": "<Keyboard>/upArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
-                    "action": "Change",
+                    "action": "Press",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "positive",
                     "id": "93ea1d9b-2eb9-46ee-a0b7-904543730e96",
-                    "path": "<Keyboard>/rightArrow",
+                    "path": "<Keyboard>/downArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
-                    "action": "Change",
+                    "action": "Press",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -205,29 +268,62 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Change",
+                    "action": "Press",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "negative",
                     "id": "bdb3e9e0-914b-401a-919d-a25a85b21264",
-                    "path": "<Gamepad>/dpad/left",
+                    "path": "<Gamepad>/dpad/down",
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
-                    "action": "Change",
+                    "action": "Press",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "positive",
                     "id": "125fb905-e70b-435a-b595-979f59c977ba",
-                    "path": "<Gamepad>/dpad/right",
+                    "path": "<Gamepad>/dpad/up",
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
-                    "action": "Change",
+                    "action": "Press",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "PS4",
+                    "id": "517a452d-536b-4377-9000-e1ce1ccf4e34",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Press",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "c1fe3991-8f5c-4db7-9744-6cf744bea610",
+                    "path": "<Gamepad>/dpad/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Press",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "fe6f0a3e-0ec0-4bdc-8401-8ffc5599ab05",
+                    "path": "<Gamepad>/dpad/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Press",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -239,6 +335,61 @@
                     "processors": "",
                     "groups": "Gamepad",
                     "action": "Ready",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1cf86df2-6e11-47f7-abfe-fad90a92bfda",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Ready",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "24f57558-f9cd-4f0e-84f1-8c134a4a70b8",
+                    "path": "<DualShockGamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Ready",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "451c85fa-4c81-49f3-97db-fa2d706a9275",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "NotReady",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e581947f-4b23-4dfc-bc28-1253583eee2d",
+                    "path": "<DualShockGamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "NotReady",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "dfb0f428-3ebc-4e96-ad90-06e404b5f7f9",
+                    "path": "<Keyboard>/backspace",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "NotReady",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -260,7 +411,13 @@
         {
             "name": "Gamepad",
             "bindingGroup": "Gamepad",
-            "devices": []
+            "devices": [
+                {
+                    "devicePath": "<Gamepad>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
         }
     ]
 }
