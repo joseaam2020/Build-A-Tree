@@ -29,7 +29,7 @@ public class PlayerUI : MonoBehaviour
 
     public void onChange() 
     {
-        float cambio = inputControl.UI.Change.ReadValue<float>();
+        float cambio = inputControl.UI.Press.ReadValue<float>();
         sumarIndice((int) cambio);
     }
 

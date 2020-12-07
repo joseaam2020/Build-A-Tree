@@ -32,6 +32,21 @@ public class PlayerMovement : MonoBehaviour
 	public BoolEvent OnCrouchEvent;
 	private bool m_wasCrouching = false;
 
+	public void setGrounded(bool newGrounded)
+    {
+		m_Grounded = newGrounded;
+    }
+
+	public bool getGrounded()
+    {
+		return m_Grounded;
+    }
+
+	public float getJumpForce()
+    {
+		return m_JumpForce;
+    }
+
 	private void Awake()
 	{
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();

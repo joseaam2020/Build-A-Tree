@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
    
-    private InputControl inputControl;
+    private InputControl inputControl; 
     public PlayerMovement player;
     public Animator animator;
     public Transform punchPoint;
@@ -16,12 +16,21 @@ public class Player : MonoBehaviour
     public float speed = 40;
     private float lastPunch;
     public float punchForce = 200;
-   
+
+    private float horizontalMovement;
+    private PlayerMovement movement;
+    private Rigidbody2D body;
+
+
     private void Awake()
     {
         inputControl = new InputControl();
         lastPunch = inputControl.Player.Punch.ReadValue<float>();
+        horizontalMovement = 0f;
+        movement = this.gameObject.GetComponent(typeof(PlayerMovement)) as PlayerMovement;
+        body = this.gameObject.GetComponent(typeof(Rigidbody2D)) as Rigidbody2D;
     }
+
 
     private void OnEnable()
     {
@@ -35,23 +44,49 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        float horizontalMovement = inputControl.Player.Movement.ReadValue<float>();
-        float verticalMovement = inputControl.Player.Jump.ReadValue<float>();
-        float punchingValue = inputControl.Player.Punch.ReadValue<float>();
-        //Debug.Log(punchingValue);
-        if (verticalMovement == 1)
+        player.Move(horizontalMovement * speed * Time.deltaTime,false, jump);
+        animator.SetFloat("Speed", Mathf.Abs(horizontalMovement));
+    }
+
+    public void jumpLanding()
+    {
+        animator.SetBool("Jump", false);
+        movement.setGrounded(true);
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.DrawWireSphere(punchPoint.position,attackRange);
+    }
+
+    public void OnMovement()
+    {
+        horizontalMovement = inputControl.Player.Movement.ReadValue<float>();
+    }
+
+    public void OnJump()
+    {
+        animator.SetBool("Jump", true);
+        // Add a vertical force to the player.
+        if (movement.getGrounded())
         {
-            jump = true;
-            animator.SetBool("Jump", true);
+            movement.setGrounded(false);
+            body.AddForce(new Vector2(0f, movement.getJumpForce()));
         }
-        if (punchingValue == 1 && lastPunch != 1)
+    }
+
+    public void OnPunch()
+    {
+        
+        float punchingValue = inputControl.Player.Punch.ReadValue<float>();
+        if (lastPunch != 1)
         {
             //punch animation     
             animator.SetTrigger("Punch");
             animator.SetBool("Jump", false);
             //add force to enemies
             Collider2D[] hitPlayers = Physics2D.OverlapCircleAll(punchPoint.position, attackRange, playerLayer);
-            if(hitPlayers.Length != 0)
+            if (hitPlayers.Length != 0)
             {
                 foreach (Collider2D enemyPlayer in hitPlayers)
                 {
@@ -71,22 +106,12 @@ public class Player : MonoBehaviour
                     }
                 }
             }
-           
         }
-        player.Move(horizontalMovement * speed * Time.deltaTime,false, jump);
-        //Debug.Log(transform.position);
-        animator.SetFloat("Speed", Mathf.Abs(horizontalMovement));
         lastPunch = punchingValue;
     }
 
-    public void jumpLanding()
+    public string getName()
     {
-        jump = false;
-        animator.SetBool("Jump", false);
-    }
-
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.DrawWireSphere(punchPoint.position,attackRange);
+        return this.gameObject.name; 
     }
 }
