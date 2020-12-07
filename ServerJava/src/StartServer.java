@@ -11,6 +11,7 @@ public class StartServer implements Runnable{
 
     public StartServer(Socket soc){
         this.socket = soc;
+        SalidaMSG.getInstance().setConnection(soc);
     }
 
     @Override
@@ -23,24 +24,23 @@ public class StartServer implements Runnable{
             while(true){
 
                 try{
-                    try {
-                        String message = in.readUTF();
-                        System.out.println(message);
 
-                        //COLOCAR SPLIT
-                        String msg[] = message.split("#");
+                    byte[] lenBytes = new byte[4];
+                    in.read(lenBytes, 0, 4);
+                    int len = (((lenBytes[3] & 0xff) << 24) | ((lenBytes[2] & 0xff) << 16) | ((lenBytes[1] & 0xff) << 8) | (lenBytes[0] & 0xff));
+                    byte[] receivedBytes = new byte[len];
+                    in.read(receivedBytes, 0, len);
+                    String received = new String(receivedBytes, 0, len);
+                    System.out.println("Recibido "+received);
+                    String command[] = received.split("#");
+                    if (command[0].equals("GETCHALLENGE")) {
+                        Challenge challenge = new Challenge();
+                        Control.getInstance().setPlayers(Integer.parseInt(command[1]));
+                    } else {
 
-                        if (msg[0].equals("GETCHALLENGE")){
-                            Challenge challenge = new Challenge();
-
-                        }
-
-                        //COMANDOS PARA LEER EL MENSAJE
-                    }catch(SocketException e3){
-                        System.exit(0);
                     }
                 } catch(SocketException se){
-                    se.printStackTrace();
+                    System.exit(0);
                 }
             }
 
