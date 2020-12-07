@@ -95,6 +95,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 723578149123370006, guid: ca3070ff3d70e094dbf7f8c152930154,
+        type: 3}
+      propertyPath: m_JumpForce
+      value: 1000
+      objectReference: {fileID: 0}
     - target: {fileID: 723578149123370025, guid: ca3070ff3d70e094dbf7f8c152930154,
         type: 3}
       propertyPath: speed
@@ -103,7 +108,7 @@ PrefabInstance:
     - target: {fileID: 723578149123370025, guid: ca3070ff3d70e094dbf7f8c152930154,
         type: 3}
       propertyPath: punchForce
-      value: 400
+      value: 700
       objectReference: {fileID: 0}
     - target: {fileID: 723578149123370026, guid: ca3070ff3d70e094dbf7f8c152930154,
         type: 3}
@@ -205,7 +210,7 @@ PrefabInstance:
     - target: {fileID: 2571551252809781661, guid: a75b94e9e11fe0e4497e8b17017bfb06,
         type: 3}
       propertyPath: punchForce
-      value: 400
+      value: 700
       objectReference: {fileID: 0}
     - target: {fileID: 2571551252809781662, guid: a75b94e9e11fe0e4497e8b17017bfb06,
         type: 3}
@@ -271,6 +276,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2571551252809781666, guid: a75b94e9e11fe0e4497e8b17017bfb06,
+        type: 3}
+      propertyPath: m_JumpForce
+      value: 1000
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2571551252809781664, guid: a75b94e9e11fe0e4497e8b17017bfb06, type: 3}
@@ -367,7 +377,12 @@ PrefabInstance:
     - target: {fileID: 6227799921529072670, guid: 20148c86859329a48bcd52fd22ce8e5f,
         type: 3}
       propertyPath: punchForce
-      value: 400
+      value: 700
+      objectReference: {fileID: 0}
+    - target: {fileID: 6227799921529072673, guid: 20148c86859329a48bcd52fd22ce8e5f,
+        type: 3}
+      propertyPath: m_JumpForce
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 6227799921529072675, guid: 20148c86859329a48bcd52fd22ce8e5f,
         type: 3}
@@ -401,6 +416,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2018004728887184719, guid: ffe8e84831b7356459fd07cc242ab4a1,
+        type: 3}
+      propertyPath: m_JumpForce
+      value: 1000
+      objectReference: {fileID: 0}
     - target: {fileID: 2018004728887184752, guid: ffe8e84831b7356459fd07cc242ab4a1,
         type: 3}
       propertyPath: speed
@@ -409,7 +429,7 @@ PrefabInstance:
     - target: {fileID: 2018004728887184752, guid: ffe8e84831b7356459fd07cc242ab4a1,
         type: 3}
       propertyPath: punchForce
-      value: 400
+      value: 700
       objectReference: {fileID: 0}
     - target: {fileID: 2018004728887184754, guid: ffe8e84831b7356459fd07cc242ab4a1,
         type: 3}

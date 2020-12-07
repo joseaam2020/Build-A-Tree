@@ -51,7 +51,7 @@ public class PlayerSelection : MonoBehaviour
         if (playerlist.Length > 0)
         {
             PlayerInput input = this.gameObject.AddComponent(typeof(PlayerInput)) as PlayerInput;
-            input.user.AssociateActionsWithUser(inputControl);
+            //input.user.AssociateActionsWithUser(inputControl);
             PlayerInput playerInput = playerlist[counter].GetComponent<PlayerInput>();
             InputDevice device = playerInput.devices[0];
             InputUser.PerformPairingWithDevice(device, input.user);

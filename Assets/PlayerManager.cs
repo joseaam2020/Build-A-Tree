@@ -11,6 +11,7 @@ public class PlayerManager : MonoBehaviour
     public static event playerListChanged OnPlayerListChange;
     public GameObject PlayerHubPrefab;
 
+
     public void nada()
     {
         return;
@@ -36,7 +37,6 @@ public class PlayerManager : MonoBehaviour
             //Conseguir player manager
             PlayerInputManager inputManager = this.gameObject.GetComponent(typeof(PlayerInputManager)) as PlayerInputManager;
             //Hacer Player Join en el Player Manager
-            int counter = 0; 
             List<string> activeModels = new List<string>();
             foreach (GameObject player in playerlist)
             {
@@ -55,7 +55,7 @@ public class PlayerManager : MonoBehaviour
                 Destroy(player);
             }
             playerlist = GameObject.FindGameObjectsWithTag("Player");
-            counter = 0;
+            int counter = 0;
             foreach (GameObject player in playerlist)
             {
                 Debug.Log(player.name);
@@ -65,6 +65,7 @@ public class PlayerManager : MonoBehaviour
                 {
                     counter = 0;
                 }
+                player.name = counter.ToString(); 
                 newPlayerHub.setActiveModel(activeModels[counter]);
                 counter++;
             }

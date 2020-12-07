@@ -18,13 +18,19 @@ public class Player : MonoBehaviour
     public float punchForce = 200;
 
     private float horizontalMovement;
-   
+    private PlayerMovement movement;
+    private Rigidbody2D body;
+
+
     private void Awake()
     {
         inputControl = new InputControl();
         lastPunch = inputControl.Player.Punch.ReadValue<float>();
         horizontalMovement = 0f;
+        movement = this.gameObject.GetComponent(typeof(PlayerMovement)) as PlayerMovement;
+        body = this.gameObject.GetComponent(typeof(Rigidbody2D)) as Rigidbody2D;
     }
+
 
     private void OnEnable()
     {
@@ -44,8 +50,8 @@ public class Player : MonoBehaviour
 
     public void jumpLanding()
     {
-        jump = false;
         animator.SetBool("Jump", false);
+        movement.setGrounded(true);
     }
 
     private void OnDrawGizmosSelected()
@@ -60,13 +66,13 @@ public class Player : MonoBehaviour
 
     public void OnJump()
     {
-        float verticalMovement = inputControl.Player.Jump.ReadValue<float>();
-        if (verticalMovement == 1)
+        animator.SetBool("Jump", true);
+        // Add a vertical force to the player.
+        if (movement.getGrounded())
         {
-            jump = true;
-            animator.SetBool("Jump", true);
+            movement.setGrounded(false);
+            body.AddForce(new Vector2(0f, movement.getJumpForce()));
         }
-        player.Move(horizontalMovement * speed * Time.deltaTime, false, jump);
     }
 
     public void OnPunch()
@@ -102,5 +108,10 @@ public class Player : MonoBehaviour
             }
         }
         lastPunch = punchingValue;
+    }
+
+    public string getName()
+    {
+        return this.gameObject.name; 
     }
 }
