@@ -10,6 +10,7 @@ public class SplayTree {
 
     public SplayTree() {
         raiz=null;
+
     }
 
     public void insertar (int info)
