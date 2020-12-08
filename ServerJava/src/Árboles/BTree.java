@@ -1,10 +1,17 @@
 package Árboles;
 
+/**
+ * Clase que construye el arbol B, posee la raiz y un orden asignados para el arbol.
+ */
 public class BTree {
 
     private int T;
     private BNode root;
 
+    /**
+     * Constructor de la clase del arbol B, le asigna el orden del arbol al nodo de la raiz.
+     * @param t
+     */
     public BTree(int t){
         this.T = t;
         root = new BNode(t);
@@ -12,6 +19,12 @@ public class BTree {
         root.setLeaf(true);
     }
 
+    /**
+     * Split a la hoja (nodo) introducida para obtener sus distintos valores
+     * @param x
+     * @param pos
+     * @param y
+     */
     public void Split(BNode x,int pos, BNode y){
         BNode z = new BNode(T);
         z.setLeaf(y.getLeaf());
@@ -52,6 +65,10 @@ public class BTree {
         x.setDatum(x.getDatum()+1);
     }
 
+    /**
+     * Permiten insertar el valor introducido al arbol.
+     * @param num
+     */
     public void Insert(int num){
         BNode r_node = root;
         if (r_node.getDatum() == 2*T-1){
@@ -68,6 +85,11 @@ public class BTree {
         }
     }
 
+    /**
+     * Complemento del primer metodo de insertar, ya que este inserta directamente a la hoja.
+     * @param node
+     * @param data
+     */
     private void Insertion(BNode node,int data){
         BNode nodechilds[] = node.getChilds();
         int nodedata[] = node.getData();
@@ -97,10 +119,17 @@ public class BTree {
         }
     }
 
+    /**
+     * Metodo para llamar al ShowAux y enseñar el arbol desde la raiz
+     */
     public void Show(){
         ShowAux(root);
     }
 
+    /**
+     * Metodo privado que muestra el arbol desde la raiz.
+     * @param node
+     */
     private void ShowAux(BNode node){
         assert (node == null);
         for (int i = 0; i<node.getDatum();i++){
