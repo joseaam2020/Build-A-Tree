@@ -18,7 +18,6 @@ public class Player : MonoBehaviour
     public float punchForce = 200;
 
     private float horizontalMovement;
-    private PlayerMovement movement;
     private Rigidbody2D body;
 
 
@@ -27,7 +26,6 @@ public class Player : MonoBehaviour
         inputControl = new InputControl();
         lastPunch = inputControl.Player.Punch.ReadValue<float>();
         horizontalMovement = 0f;
-        movement = this.gameObject.GetComponent(typeof(PlayerMovement)) as PlayerMovement;
         body = this.gameObject.GetComponent(typeof(Rigidbody2D)) as Rigidbody2D;
     }
 
@@ -51,7 +49,7 @@ public class Player : MonoBehaviour
     public void jumpLanding()
     {
         animator.SetBool("Jump", false);
-        movement.setGrounded(true);
+        player.setGrounded(true);
     }
 
     private void OnDrawGizmosSelected()
@@ -68,10 +66,10 @@ public class Player : MonoBehaviour
     {
         animator.SetBool("Jump", true);
         // Add a vertical force to the player.
-        if (movement.getGrounded())
+        if (player.getGrounded())
         {
-            movement.setGrounded(false);
-            body.AddForce(new Vector2(0f, movement.getJumpForce()));
+            player.setGrounded(false);
+            body.AddForce(new Vector2(0f, player.getJumpForce()));
         }
     }
 
