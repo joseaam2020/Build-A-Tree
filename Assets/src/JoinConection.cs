@@ -104,12 +104,7 @@ public class JoinConection : MonoBehaviour
             }
         }
         //Cambio de escena
-        /*
-        PlayerInputManager inputManager = this.gameObject.GetComponent(typeof(PlayerInputManager).ToString()) as PlayerInputManager;
-        inputManager.DisableJoining();
-        GameObject[] managerList = GameObject.FindGameObjectsWithTag("PlayerManager");
-        GameObject manager = managerList[0];
-        DontDestroyOnLoad(manager);*/
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); //Aqui se carga la escena juego 
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        //Aqui se carga la escena juego, puede conseguir numero de jugadores con playerCounter
     }
 }

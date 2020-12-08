@@ -46,15 +46,18 @@ public class PlayerSelection : MonoBehaviour
         //Debug.Log("Inicio de seleccion");
 
         //Conectar el control al seleccionador
+        
         GameObject[] playerlist = GameObject.FindGameObjectsWithTag("Player");
         JoinConection.addPlayer(playerlist[counter]);
         if (playerlist.Length > 0)
         {
             PlayerInput input = this.gameObject.AddComponent(typeof(PlayerInput)) as PlayerInput;
-            //input.user.AssociateActionsWithUser(inputControl);
+            input.user.AssociateActionsWithUser(inputControl);
             PlayerInput playerInput = playerlist[counter].GetComponent<PlayerInput>();
             InputDevice device = playerInput.devices[0];
             InputUser.PerformPairingWithDevice(device, input.user);
+           // Debug.Log(inputControl.controlSchemes.ToArray()[0].ToString());
+           // Debug.Log(device.name);
             input.defaultControlScheme = "Gamepad";
             input.defaultActionMap = "UI";
             input.actions = inputControl.asset;
@@ -74,6 +77,7 @@ public class PlayerSelection : MonoBehaviour
 
     public void OnPress()
     {
+        //Debug.Log("Press done");
         //Cambia de personaje seleccionado
         if (!ready)
         {
