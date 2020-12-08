@@ -1,14 +1,23 @@
 import Árboles.*;
 import java.util.Random;
 
+/**
+ * Clase challenge que genera los challenge de la partida de manera aleatoria.
+ */
 public class Challenge {
 
     private Random randnum = new Random();
 
+    /**
+     * Constructor de la clase challenge que llama al metodo que selecciona el tipo de arbol.
+     */
     public Challenge(){
         selectChallenge();
     }
 
+    /**
+     * Metodo que selecciona el tipo de arbol para el challenge.
+     */
     public void selectChallenge(){
 
         int get_num = randnum.nextInt(8);
@@ -25,6 +34,9 @@ public class Challenge {
 
     }
 
+    /**
+     * Challenge del arbol AVL, selecciona uno de las 2 opciones.
+     */
     public void AVLChallenge(){
 
         int get_num = randnum.nextInt(2);
@@ -54,13 +66,45 @@ public class Challenge {
             Control.getInstance().setChallenge("AVL");
             Control.getInstance().setGoal(num_in);
         }
+        Control.getInstance().setShape("CIRCULO");
+
     }
 
+    /**
+     * Challenge del arbol BST, selecciona uno de las 2 opciones.
+     */
     public void BSTChallenge(){
-        //FALTA ARBOL
-        AVLChallenge();
+        int get_num = randnum.nextInt(2);
+
+        if(get_num == 0) {
+            BSTTree challenge1 = new BSTTree();
+            int num_in = 0;
+            while (num_in < 7){
+                challenge1.insertar(num_in);
+                num_in++;
+            }
+            int time = 351;
+            Control.getInstance().setTime1(time);
+            Control.getInstance().setChallenge("BST");
+            Control.getInstance().setGoal(num_in);
+        } else{
+            BSTTree challenge2 = new BSTTree();
+            int num_in = 0;
+            while (num_in < 11){
+                challenge2.insertar(num_in);
+                num_in++;
+            }
+            int time = 471;
+            Control.getInstance().setTime1(time);
+            Control.getInstance().setChallenge("BST");
+            Control.getInstance().setGoal(num_in);
+        }
+        Control.getInstance().setShape("ROMBO");
     }
 
+    /**
+     * Challenge del arbol B, selecciona uno de las 2 opciones.
+     */
     public void BChallenge(){
 
         int get_num = randnum.nextInt(2);
@@ -88,12 +132,40 @@ public class Challenge {
             Control.getInstance().setChallenge("B");
             Control.getInstance().setGoal(num_in);
         }
+        Control.getInstance().setShape("CUADRADO");
 
     }
 
+    /**
+     * Challenge del arbol Splay, selecciona uno de las 2 opciones.
+     */
     public void SplayChallenge(){
-        //FALTA ARBOL
-        BChallenge();
+        int get_num = randnum.nextInt(2);
+
+        if(get_num == 0) {
+            SplayTree challenge1 = new SplayTree();
+            int num_in = 0;
+            while (num_in < 6){
+                challenge1.insertar(num_in);
+                num_in++;
+            }
+            int time = 374;
+            Control.getInstance().setTime1(time);
+            Control.getInstance().setChallenge("SPLAY");
+            Control.getInstance().setGoal(num_in);
+        } else{
+            BTree challenge2 = new BTree(5);
+            int num_in = 0;
+            while (num_in < 12){
+                challenge2.Insert(num_in);
+                num_in++;
+            }
+            int time = 481;
+            Control.getInstance().setTime1(time);
+            Control.getInstance().setChallenge("SPLAY");
+            Control.getInstance().setGoal(num_in);
+        }
+        Control.getInstance().setShape("TRIANGULO");
     }
 
 }

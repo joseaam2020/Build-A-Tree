@@ -13,8 +13,13 @@ public class JoinConection : MonoBehaviour
     private InputControl inputControl;
     public static int readyPlayers;
     private int counter = 0;
-    private int playerCounter = 0; //este es el player counter XD 
-    private bool doneReady; 
+    private static int playerCounter = 0; //este es el player counter XD 
+    private bool doneReady;
+    
+    public static int getplayerCounter()
+    {
+        return playerCounter;
+    }
 
     private void Awake()
     {
@@ -64,7 +69,7 @@ public class JoinConection : MonoBehaviour
 
     private void Update()
     {
-        if(readyPlayers == playerCounter && playerCounter > 1)
+        if(readyPlayers == playerCounter && playerCounter > 0)
         {
             if (!doneReady)
             {
