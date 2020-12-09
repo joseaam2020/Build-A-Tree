@@ -39,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
 
 	public bool getGrounded()
     {
-		return m_Grounded;
+		return m_Grounded; 
     }
 
 	public float getJumpForce()

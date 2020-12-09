@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -51,14 +51,15 @@ public class PlayerManager : MonoBehaviour
                 InputDevice device = oldInput.devices[0];
                 //Añadir PLayerHub por PlayerManager
                 inputManager.playerPrefab = newPlayer;
-                inputManager.JoinPlayer(-1,-1,oldInput.currentControlScheme,device);
+                inputManager.JoinPlayer(-1, -1, oldInput.currentControlScheme, device);
+                player.tag = "NotPlayer";
                 Destroy(player);
             }
             playerlist = GameObject.FindGameObjectsWithTag("Player");
             int counter = 0;
             foreach (GameObject player in playerlist)
             {
-                Debug.Log(player.name);
+                //ebug.Log(player.name);
                 player.transform.position = new Vector3(0, 0, -1);
                 PlayerHub newPlayerHub = player.GetComponent(typeof(PlayerHub)) as PlayerHub;
                 if(counter >= activeModels.Count)
@@ -69,7 +70,13 @@ public class PlayerManager : MonoBehaviour
                 newPlayerHub.setActiveModel(activeModels[counter]);
                 counter++;
             }
+            Invoke("Changed",4);
         }
+    }
+
+    public void Changed()
+    {
+        OnPlayerListChange();
     }
 
     public static GameObject[] getPlayerlist()
