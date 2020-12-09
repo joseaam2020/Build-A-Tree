@@ -70,7 +70,7 @@ public class PlayerManager : MonoBehaviour
                 newPlayerHub.setActiveModel(activeModels[counter]);
                 counter++;
             }
-            Invoke("Changed",4);
+            Invoke("Changed",1);
         }
     }
 

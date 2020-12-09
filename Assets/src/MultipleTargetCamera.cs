@@ -53,24 +53,6 @@ public class MultipleTargetCamera : MonoBehaviour
             }
         }
         updated = true;
-        /*
-        }
-        GameObject[] newPlayerlist = PlayerManager.getPlayerlist();
-        if (!playerlist.Equals(newPlayerlist))
-        {
-            playerlist = newPlayerlist; 
-            if(playerlist.Length > 0)
-            {
-                Debug.Log(playerlist.Length);
-                targets = new List<Transform>(playerlist.Length);
-                for (int i = 0; i < playerlist.Length; i++)
-                {
-                    targets.Add(playerlist[i].transform);
-                    Debug.Log("target" + playerlist[i].name + playerlist[i].GetInstanceID());
-                }
-            }
-        }*/
-
     }
 
     private void LateUpdate()
@@ -117,7 +99,6 @@ public class MultipleTargetCamera : MonoBehaviour
 
     Vector3 GetCenterPoint()
     {
-        //Debug.Log(targets.Count);
         if (indice == 0)
         {
             return new Vector3(0,0,0);
