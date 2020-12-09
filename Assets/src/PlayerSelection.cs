@@ -73,7 +73,7 @@ public class PlayerSelection : MonoBehaviour
         {
             image.SetActive(true);
         }
-    }
+    } 
 
     public void OnPress()
     {

@@ -20,12 +20,6 @@ public class ClientSocket : MonoBehaviour
         listen.Start();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public ClientSocket getInstance()
     {
         if (instance == null)
