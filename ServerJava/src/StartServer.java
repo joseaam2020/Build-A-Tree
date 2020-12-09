@@ -38,22 +38,26 @@ public class StartServer implements Runnable{
 
                     byte[] lenBytes = new byte[4];
                     in.read(lenBytes, 0, 4);
-                    int len = (((lenBytes[3] & 0xff) << 24) | ((lenBytes[2] & 0xff) << 16) | ((lenBytes[1] & 0xff) << 8) | (lenBytes[0] & 0xff));
+                    int len = (((lenBytes[3] & 0xff) << 24) | ((lenBytes[2] & 0xff) << 16) |
+                            ((lenBytes[1] & 0xff) << 8) | (lenBytes[0] & 0xff));
                     byte[] receivedBytes = new byte[len];
                     in.read(receivedBytes, 0, len);
                     String received = new String(receivedBytes, 0, len);
-                    System.out.println("Recibido "+received);
+
                     String command[] = received.split("#");
                     if (command[0].equals("GETCHALLENGE")) {
                         Challenge challenge = new Challenge();
                         Control.getInstance().setPlayers(Integer.parseInt(command[1]));
+                        System.out.println("Recibido: "+command[0]);
                     }
                     if(command[0].equals("STARTGAME")){
                         Control.getInstance().setGame_time1(984);
+                        System.out.println("Recibido: "+command[0]);
                     }
                     if (command[0].equals("TOKEN")){
                         //RECIBE TOKEN#JUGADOR#FORMA QUE AGARRO
                         Control.getInstance().verifyToken(Integer.parseInt(command[1]),command[2]);
+                        System.out.println("Recibido: "+command[0]);
                     }
                 } catch(SocketException se){
                     System.exit(0);

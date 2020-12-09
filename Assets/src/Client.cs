@@ -27,7 +27,7 @@ public class Client : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //SendMSG("GETCHALLENGE#1");       
+        SendMSG("GETCHALLENGE#1");       
         listen = new Thread(Listener);
         listen.Start();
     }
@@ -65,7 +65,7 @@ public class Client : MonoBehaviour
             clientSocket.Receive(rcvBytes);
             string rcv = System.Text.Encoding.ASCII.GetString(rcvBytes);
 
-            string[] split = rcv.Split("#");
+            string[] split = rcv.Split('#');
 
             //CONDICIONES PARA EL SPLIT
             if (split[0] == "CHALLENGETIME")

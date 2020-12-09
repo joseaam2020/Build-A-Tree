@@ -103,11 +103,8 @@ public class MultipleTargetCamera : MonoBehaviour
         {
             return new Vector3(0,0,0);
         } else if (indice == 1){
-            Debug.Log(targets[0].position);
             return targets[0].position;
         } else {
-            Debug.Log(targets.Count);
-            Debug.Log(indice );
             Bounds bounds = new Bounds(targets[0].position, Vector2.zero);
             for (int i = 0; i < indice; i++)
             {

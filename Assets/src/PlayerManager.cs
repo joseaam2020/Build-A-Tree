@@ -10,6 +10,7 @@ public class PlayerManager : MonoBehaviour
     public delegate void playerListChanged();
     public static event playerListChanged OnPlayerListChange;
     public GameObject PlayerHubPrefab;
+    public GameObject ClientPrefab;
 
 
     public void nada()
@@ -77,6 +78,7 @@ public class PlayerManager : MonoBehaviour
     public void Changed()
     {
         OnPlayerListChange();
+        Instantiate(ClientPrefab);
     }
 
     public static GameObject[] getPlayerlist()
