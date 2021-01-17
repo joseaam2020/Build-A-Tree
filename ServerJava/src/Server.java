@@ -1,4 +1,4 @@
-import java.net.*;
+ import java.net.*;
 import java.io.*;
 
 /**
@@ -55,6 +55,5 @@ public class Server implements Runnable {
             }
         } catch (IOException e){
             e.printStackTrace();
-
         }    }
 }

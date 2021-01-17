@@ -3,8 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// Carga la siguiente escena en Menu principal 
+/// </summary>
 public class MainMenu : MonoBehaviour
 {
+    /// <summary>
+    /// Carga la siguiente escena 
+    /// </summary>
     public void NextScene()
     {
         Debug.Log("Selected Button");

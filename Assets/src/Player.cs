@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Clase que se encarga de recibir el input de un control y mover a su respectivo modelo.
+/// Tambien se encarga de las animaciones.
+/// </summary>
 public class Player : MonoBehaviour
 {
    
@@ -40,28 +44,54 @@ public class Player : MonoBehaviour
         inputControl.Disable();
     }
 
+    /// <summary>
+    /// Mueve al personaje segun los valores obtenidos de los controles.
+    /// </summary>
     private void Update()
     {
         player.Move(horizontalMovement * speed * Time.deltaTime,false, jump);
+        Vector3 position = this.transform.position;
+        if (position.y < -6)
+        {
+            position.y = 7;
+        }
+        if (position.x < -9)
+        {
+            position.x = 11;
+        } else if (position.x > 11)
+        {
+            position.x = -9;
+        }
+        this.transform.position = position;
         animator.SetFloat("Speed", Mathf.Abs(horizontalMovement));
     }
 
+    /// <summary>
+    /// Es llamada cuando se termina un salto.
+    /// </summary>
     public void jumpLanding()
     {
         animator.SetBool("Jump", false);
         player.setGrounded(true);
     }
 
+
     private void OnDrawGizmosSelected()
     {
         Gizmos.DrawWireSphere(punchPoint.position,attackRange);
     }
 
+    /// <summary>
+    /// Obtiene valores del control para moverse de manera horizontal.
+    /// </summary>
     public void OnMovement()
     {
         horizontalMovement = inputControl.Player.Movement.ReadValue<float>();
     }
 
+    /// <summary>
+    /// Añade una fuerza al personaje para hacerlo saltar cuando se obtiene la instruccion del control.
+    /// </summary>
     public void OnJump()
     {
         animator.SetBool("Jump", true);
@@ -73,6 +103,9 @@ public class Player : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Obtiene el valor de golpear del control y añade fuerza a los enmigos en la zona de golpe.
+    /// </summary>
     public void OnPunch()
     {
         
@@ -108,6 +141,10 @@ public class Player : MonoBehaviour
         lastPunch = punchingValue;
     }
 
+    /// <summary>
+    /// Obtiene nombre.
+    /// </summary>
+    /// <returns>Nombre como string</returns>
     public string getName()
     {
         return this.gameObject.name; 

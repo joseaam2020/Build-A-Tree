@@ -926,6 +926,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerHubPrefab: {fileID: 595268142427867185, guid: 740bc783e46c58345aa4500b9771a968,
     type: 3}
+  ClientPrefab: {fileID: 6631062283855470032, guid: 8705974d52ffd714b83f65160171db82,
+    type: 3}
 --- !u!4 &1234481050
 Transform:
   m_ObjectHideFlags: 0
@@ -1280,7 +1282,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1733731329}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.89, y: 0, z: -1}
+  m_LocalPosition: {x: 4.53, y: 0.72, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1293695782}

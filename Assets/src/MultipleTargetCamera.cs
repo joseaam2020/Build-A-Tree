@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Clase se encarga de la camara en la escena de juego.
+/// Fue creada a partir de una clase tomada como referencia. 
+/// Brackeys,"MULTIPLE TARGET CAMERA in Unity", Youtube, 17-Dec-2017.[Online].Available: https://www.youtube.com/watch?v=aLpixrPvlB8.
+/// [Accesed: 13-Dec-2020]
+/// </summary>
 public class MultipleTargetCamera : MonoBehaviour
 {
     private List<Transform> targets;
@@ -36,13 +42,15 @@ public class MultipleTargetCamera : MonoBehaviour
         PlayerManager.OnPlayerListChange -= UpdateTargets;
     }
 
+    /// <summary>
+    /// Obtiene lso objetos jugdor del PlayerManager y los conecta a la camara
+    /// </summary>
     private void UpdateTargets()
     {
         playerlist = PlayerManager.getPlayerlist();
         indice = 0;
         foreach (GameObject newPlayer in playerlist)
         {
-            Debug.Log("Done");
             if (newPlayer.activeSelf)
             {
                 Debug.Log(newPlayer.transform);
@@ -55,6 +63,9 @@ public class MultipleTargetCamera : MonoBehaviour
         updated = true;
     }
 
+    /// <summary>
+    /// Mueve la camara
+    /// </summary>
     private void LateUpdate()
     {
         if (updated)
@@ -69,13 +80,19 @@ public class MultipleTargetCamera : MonoBehaviour
         }
     }
        
-
+    /// <summary>
+    /// Calcula la distancia a la cual la camara esta de los objetos segun cuan separados estan
+    /// </summary>
     void zoomCamara()
     {
         float newZoom = Mathf.Lerp(minZoom, maxZoom, GetGreatestDistance()/zoomLimit);
         cam.fieldOfView = newZoom;
     }
 
+    /// <summary>
+    /// Calcula la mayor distancia entre los objetos.
+    /// </summary>
+    /// <returns>La mayor distancia entres lso objetos como float</returns>
     float GetGreatestDistance()
     {
         if(indice == 0)
@@ -90,6 +107,9 @@ public class MultipleTargetCamera : MonoBehaviour
         return bounds.size.x;
     }
 
+    /// <summary>
+    /// Mueve la camara segun la posicion de los objetos
+    /// </summary>
     void moveCamara()
     {
         Vector3 centerPoint = GetCenterPoint();
@@ -97,6 +117,10 @@ public class MultipleTargetCamera : MonoBehaviour
         transform.position = Vector3.SmoothDamp(transform.position, withOffset, ref velocity, smoothTime);
     }
 
+    /// <summary>
+    /// Calcula el centro de un rectangulo que encierra a todos los objetos
+    /// </summary>
+    /// <returns>El punto central entre los objetos como un Vector3</returns>
     Vector3 GetCenterPoint()
     {
         if (indice == 0)
