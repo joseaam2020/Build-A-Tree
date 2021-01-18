@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PlayerManager
   - NotPlayer
+  - Timer
   layers:
   - Default
   - TransparentFX
@@ -42,4 +43,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: fondo
+    uniqueID: 3089384177
+    locked: 0
+  - name: plataforma
+    uniqueID: 2814064673
+    locked: 0
+  - name: jugador
+    uniqueID: 1963710547
+    locked: 0
+  - name: UI
+    uniqueID: 4049017903
     locked: 0

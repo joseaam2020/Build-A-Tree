@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 534614}
   - component: {fileID: 534615}
   m_Layer: 9
-  m_Name: Custom Edited - Super Smash Bros Customs - Green Greens (1)_2
+  m_Name: IslaIZQ
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -189,9 +189,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingLayerID: -1480902623
+  m_SortingLayer: 2
+  m_SortingOrder: 2
   m_Sprite: {fileID: -2600533082694384223, guid: af8e7a8709f10c247a598844033b5513,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -230,49 +230,136 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.265625, y: 0.39221835}
   m_EdgeRadius: 0
---- !u!1 &125117614
-GameObject:
+--- !u!1001 &143083645
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1853909534}
+    m_Modifications:
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -83
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -136.01001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -590.7107
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -272.02478
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749615, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_Name
+      value: DatosJugador (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445175270596069, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_text
+      value: Player 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 986e33e0b3b009a42ac8a9c69ffb1246, type: 3}
+--- !u!224 &143083646 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+    type: 3}
+  m_PrefabInstance: {fileID: 143083645}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 125117616}
-  - component: {fileID: 125117615}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &125117615
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 125117614}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5565b4079c47a4a42b53b2d735faf313, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &125117616
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 125117614}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.4181914, y: -0.07881823, z: -40.38633}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &209622630
 GameObject:
   m_ObjectHideFlags: 0
@@ -284,7 +371,7 @@ GameObject:
   - component: {fileID: 209622631}
   - component: {fileID: 209622632}
   m_Layer: 9
-  m_Name: Custom Edited - Super Smash Bros Customs - Green Greens (1)_4 (5)
+  m_Name: TierraDER
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -340,8 +427,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1480902623
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: 3039479786846780181, guid: af8e7a8709f10c247a598844033b5513,
     type: 3}
@@ -355,6 +442,136 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &307384246
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1853909534}
+    m_Modifications:
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 222
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -136.01001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -590.7107
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -272.02478
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749615, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_Name
+      value: DatosJugador
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445175270596069, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_text
+      value: Player 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 986e33e0b3b009a42ac8a9c69ffb1246, type: 3}
+--- !u!224 &307384247 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+    type: 3}
+  m_PrefabInstance: {fileID: 307384246}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &370421911
 GameObject:
   m_ObjectHideFlags: 0
@@ -366,7 +583,7 @@ GameObject:
   - component: {fileID: 370421912}
   - component: {fileID: 370421913}
   m_Layer: 8
-  m_Name: Custom Edited - Super Smash Bros Customs - Green Greens (1)_7
+  m_Name: HojasArbol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -422,9 +639,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingLayerID: -1205583119
+  m_SortingLayer: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 4095020693258940854, guid: af8e7a8709f10c247a598844033b5513,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -449,7 +666,7 @@ GameObject:
   - component: {fileID: 414981846}
   - component: {fileID: 414981847}
   m_Layer: 9
-  m_Name: Custom Edited - Super Smash Bros Customs - Green Greens (1)_3
+  m_Name: IslaDER
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -505,9 +722,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingLayerID: -1480902623
+  m_SortingLayer: 2
+  m_SortingOrder: 2
   m_Sprite: {fileID: 7009674519383646164, guid: af8e7a8709f10c247a598844033b5513,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -557,7 +774,7 @@ GameObject:
   - component: {fileID: 456175582}
   - component: {fileID: 456175583}
   m_Layer: 8
-  m_Name: Custom Edited - Super Smash Bros Customs - Green Greens (1)_8
+  m_Name: TroncoArbol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -613,9 +830,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingLayerID: -1205583119
+  m_SortingLayer: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: -3013629971817474117, guid: af8e7a8709f10c247a598844033b5513,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -730,6 +947,266 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &620927386
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1853909534}
+    m_Modifications:
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -236
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -135.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -590.7107
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -272.02478
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749615, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_Name
+      value: DatosJugador (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445175270596069, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_text
+      value: Player 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 986e33e0b3b009a42ac8a9c69ffb1246, type: 3}
+--- !u!224 &620927387 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+    type: 3}
+  m_PrefabInstance: {fileID: 620927386}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &824624456
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1853909534}
+    m_Modifications:
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 69
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -135.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -590.7107
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -272.02478
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445174156749615, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_Name
+      value: DatosJugador (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7096445175270596069, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+        type: 3}
+      propertyPath: m_text
+      value: Player 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 986e33e0b3b009a42ac8a9c69ffb1246, type: 3}
+--- !u!224 &824624457 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7096445174156749612, guid: 986e33e0b3b009a42ac8a9c69ffb1246,
+    type: 3}
+  m_PrefabInstance: {fileID: 824624456}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1018866169
 GameObject:
   m_ObjectHideFlags: 0
@@ -741,7 +1218,7 @@ GameObject:
   - component: {fileID: 1018866170}
   - component: {fileID: 1018866171}
   m_Layer: 9
-  m_Name: Custom Edited - Super Smash Bros Customs - Green Greens (1)_4 (2)
+  m_Name: TierraCentro2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -797,8 +1274,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1480902623
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: 3039479786846780181, guid: af8e7a8709f10c247a598844033b5513,
     type: 3}
@@ -812,6 +1289,139 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1221195143
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1221195144}
+  - component: {fileID: 1221195146}
+  - component: {fileID: 1221195145}
+  m_Layer: 5
+  m_Name: Timer
+  m_TagString: Timer
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1221195144
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1221195143}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1853909534}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 285.96, y: 176}
+  m_SizeDelta: {x: 143.07654, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1221195145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1221195143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Timer
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 1
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1221195146
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1221195143}
+  m_CullTransparentMesh: 0
 --- !u!1 &1229027325
 GameObject:
   m_ObjectHideFlags: 0
@@ -823,7 +1433,7 @@ GameObject:
   - component: {fileID: 1229027327}
   - component: {fileID: 1229027326}
   m_Layer: 0
-  m_Name: Custom Edited - Super Smash Bros Customs - Green Greens (1)_0
+  m_Name: Fondo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -865,9 +1475,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -1205583119
+  m_SortingLayer: 1
+  m_SortingOrder: -1
   m_Sprite: {fileID: -8798839009671365492, guid: af8e7a8709f10c247a598844033b5513,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -997,7 +1607,7 @@ GameObject:
   - component: {fileID: 1293695783}
   - component: {fileID: 1293695784}
   m_Layer: 9
-  m_Name: Custom Edited - Super Smash Bros Customs - Green Greens (1)_1
+  m_Name: PlataformaCentro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1053,9 +1663,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingLayerID: -1480902623
+  m_SortingLayer: 2
+  m_SortingOrder: 2
   m_Sprite: {fileID: -1237911508620060137, guid: af8e7a8709f10c247a598844033b5513,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1105,7 +1715,7 @@ GameObject:
   - component: {fileID: 1396459223}
   - component: {fileID: 1396459224}
   m_Layer: 9
-  m_Name: Custom Edited - Super Smash Bros Customs - Green Greens (1)_4 (3)
+  m_Name: TierraCentro3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1161,8 +1771,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1480902623
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: 3039479786846780181, guid: af8e7a8709f10c247a598844033b5513,
     type: 3}
@@ -1187,7 +1797,7 @@ GameObject:
   - component: {fileID: 1728676262}
   - component: {fileID: 1728676263}
   m_Layer: 9
-  m_Name: Custom Edited - Super Smash Bros Customs - Green Greens (1)_4 (1)
+  m_Name: TierraCentro4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1243,9 +1853,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingLayerID: -1480902623
+  m_SortingLayer: 2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 3039479786846780181, guid: af8e7a8709f10c247a598844033b5513,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1299,6 +1909,109 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1853909530
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1853909534}
+  - component: {fileID: 1853909533}
+  - component: {fileID: 1853909532}
+  - component: {fileID: 1853909531}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1853909531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853909530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1853909532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853909530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &1853909533
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853909530}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 1
+  m_Camera: {fileID: 519420031}
+  m_PlaneDistance: 1
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_SortingLayerID: -245949393
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &1853909534
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853909530}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 1221195144}
+  - {fileID: 307384247}
+  - {fileID: 824624457}
+  - {fileID: 143083646}
+  - {fileID: 620927387}
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &1950818582
 GameObject:
   m_ObjectHideFlags: 0
@@ -1310,7 +2023,7 @@ GameObject:
   - component: {fileID: 1950818583}
   - component: {fileID: 1950818584}
   m_Layer: 9
-  m_Name: Custom Edited - Super Smash Bros Customs - Green Greens (1)_4 (4)
+  m_Name: TierraIZQ
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1366,8 +2079,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1480902623
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: 3039479786846780181, guid: af8e7a8709f10c247a598844033b5513,
     type: 3}
@@ -1392,7 +2105,7 @@ GameObject:
   - component: {fileID: 2029445647}
   - component: {fileID: 2029445648}
   m_Layer: 9
-  m_Name: Custom Edited - Super Smash Bros Customs - Green Greens (1)_4
+  m_Name: TierraCentro1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1448,9 +2161,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingLayerID: -1480902623
+  m_SortingLayer: 2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 3039479786846780181, guid: af8e7a8709f10c247a598844033b5513,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

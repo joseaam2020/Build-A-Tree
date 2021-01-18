@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Users;
-using TMPro;
 
 /// <summary>
 /// Clase para la seleccion de un personaje para el jugador

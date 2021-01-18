@@ -4,6 +4,7 @@ using UnityEngine;
 using System.Net;
 using System.Net.Sockets;
 using System.Threading;
+using TMPro;
 
 public class Client : MonoBehaviour
 {
@@ -12,6 +13,10 @@ public class Client : MonoBehaviour
     private static Client instance;
     private Thread listen;
 
+    public GameObject timer;
+    private TextMeshProUGUI time;
+    private string newTime = "";
+   
     void Awake()
     {
         if (instance == null)
@@ -22,6 +27,7 @@ public class Client : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
     }
 
     // Start is called before the first frame update
@@ -30,12 +36,14 @@ public class Client : MonoBehaviour
         SendMSG("GETCHALLENGE#1");       
         listen = new Thread(Listener);
         listen.Start();
+
+        timer = GameObject.FindGameObjectWithTag("Timer");
+        time = timer.gameObject.GetComponent(typeof(TextMeshProUGUI)) as TextMeshProUGUI;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-
+        time.SetText(newTime);
     }
 
     private void OnDisable()
@@ -70,7 +78,7 @@ public class Client : MonoBehaviour
             //CONDICIONES PARA EL SPLIT
             if (split[0] == "CHALLENGETIME")
             {
-
+                newTime = split[1];
             }
             if (split[0] == "SPAWNER")
             {
