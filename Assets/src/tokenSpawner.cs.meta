@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 7a8ca928b3ea6ca4eba2a3c1f7b70a77
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - tokenHubPrefab: {fileID: 4018339584359322246, guid: 7a669fa583d23a449a557acb7676972c,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
