@@ -5,6 +5,9 @@ using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Users;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// Clase encargada de conectar personajes a los controles una vez empezado el juego.
+/// </summary>
 public class JoinConection : MonoBehaviour
 {
 
@@ -13,8 +16,13 @@ public class JoinConection : MonoBehaviour
     private InputControl inputControl;
     public static int readyPlayers;
     private int counter = 0;
-    private int playerCounter = 0; //este es el player counter XD 
-    private bool doneReady; 
+    private static int playerCounter = 0;
+    private bool doneReady;
+    
+    public static int getplayerCounter()
+    {
+        return playerCounter;
+    }
 
     private void Awake()
     {
@@ -33,6 +41,10 @@ public class JoinConection : MonoBehaviour
         inputControl.Disable();
     }
 
+    /// <summary>
+    /// Añade un nuevo jugador al atributo allPLayers, que contiene a todos los jugadores por ingresar
+    /// </summary>
+    /// <param name="newPlayer"></param>
     public static void addPlayer(GameObject newPlayer)
     {
         for(int i = 0; i < allPlayers.Length; i++)
@@ -45,9 +57,12 @@ public class JoinConection : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Al ingresar un control por medio del PlayerManager,
+    /// conecta el jugador a su seleccionador en el menu para seleccionar un personaje
+    /// </summary>
     void OnPlayerJoined()
     {
-        Debug.Log("Joined");
         GameObject[] playerlist = GameObject.FindGameObjectsWithTag("Player");
         int actualCounter = playerlist.Length;
         if (playerCounter != actualCounter)
@@ -62,9 +77,12 @@ public class JoinConection : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Se encarga de verificar si los jugadores estan listos
+    /// </summary>
     private void Update()
     {
-        if(readyPlayers == playerCounter && playerCounter > 1)
+        if(readyPlayers == playerCounter && playerCounter > 0)
         {
             if (!doneReady)
             {
@@ -74,9 +92,12 @@ public class JoinConection : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Conecta a todod los controles a los personajes seleccionados y los guarda para la siguiente escena.
+    /// Carga la siguiente escena.
+    /// </summary>
     private void ReadySetup()
     {
-        Debug.Log("Ready for next Scene");
         
         int selectorCounter = 0;
         foreach (GameObject player in allPlayers)
@@ -104,12 +125,7 @@ public class JoinConection : MonoBehaviour
             }
         }
         //Cambio de escena
-        /*
-        PlayerInputManager inputManager = this.gameObject.GetComponent(typeof(PlayerInputManager).ToString()) as PlayerInputManager;
-        inputManager.DisableJoining();
-        GameObject[] managerList = GameObject.FindGameObjectsWithTag("PlayerManager");
-        GameObject manager = managerList[0];
-        DontDestroyOnLoad(manager);*/
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); //Aqui se carga la escena juego 
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        //Aqui se carga la escena juego, puede conseguir numero de jugadores con playerCounter
     }
 }

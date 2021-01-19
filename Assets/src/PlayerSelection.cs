@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Users;
-using TMPro;
+
+/// <summary>
+/// Clase para la seleccion de un personaje para el jugador
+/// </summary>
 public class PlayerSelection : MonoBehaviour
 {
 
@@ -41,17 +44,21 @@ public class PlayerSelection : MonoBehaviour
     {
         inputControl.Disable();
     }
+
+    /// <summary>
+    /// Cuando ingresa un jugador, se conecta a este con el seleccionador.
+    /// </summary>
+    /// <param name="counter">El indice del jugador dentro de la lista de jugadores</param>
     public void onJoin(int counter)
     {
-        //Debug.Log("Inicio de seleccion");
-
         //Conectar el control al seleccionador
+        
         GameObject[] playerlist = GameObject.FindGameObjectsWithTag("Player");
         JoinConection.addPlayer(playerlist[counter]);
         if (playerlist.Length > 0)
         {
             PlayerInput input = this.gameObject.AddComponent(typeof(PlayerInput)) as PlayerInput;
-            //input.user.AssociateActionsWithUser(inputControl);
+            input.user.AssociateActionsWithUser(inputControl);
             PlayerInput playerInput = playerlist[counter].GetComponent<PlayerInput>();
             InputDevice device = playerInput.devices[0];
             InputUser.PerformPairingWithDevice(device, input.user);
@@ -70,10 +77,14 @@ public class PlayerSelection : MonoBehaviour
         {
             image.SetActive(true);
         }
-    }
+    } 
 
+    /// <summary>
+    /// Metodo que ocurre cuando se presiona un boton para cambiar seleccio.
+    /// </summary>
     public void OnPress()
     {
+        //Debug.Log("Press done");
         //Cambia de personaje seleccionado
         if (!ready)
         {
@@ -92,7 +103,10 @@ public class PlayerSelection : MonoBehaviour
         }
     }
 
-
+    /// <summary>
+    /// Metodo que ocurre cuando el jugador selecciona que su seleccion esta lista.
+    /// Lo indica a JoinConection.
+    /// </summary>
     public void OnReady()
     {
         if (!ready)
@@ -108,6 +122,9 @@ public class PlayerSelection : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Metodo para retractarse de la seleccion.
+    /// </summary>
     public void OnNotReady()
     {
 
@@ -123,6 +140,10 @@ public class PlayerSelection : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Metodo para obtener el personaje seleccionado por el jugador.
+    /// </summary>
+    /// <returns>Nombre del modelo seleccionado como un string</returns>
     public string getSelectedModel()
     {
         return modelList[indice].name;

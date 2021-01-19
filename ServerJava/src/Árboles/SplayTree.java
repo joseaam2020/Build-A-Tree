@@ -1,18 +1,31 @@
 package Árboles;
 
+/**
+ * Clase que forma al arbol splay, contiene a la clase que forma sus nodos.
+ */
 public class SplayTree {
+    /**
+     * Clase nodo, alamacena los datos del arbol splay
+     */
     class Nodo
     {
         int info;
         Nodo izq, der;
     }
-    Nodo raiz;
+    private Nodo raiz;
 
+    /**
+     * Constructor del arbol splay
+     */
     public SplayTree() {
         raiz=null;
 
     }
 
+    /**
+     * Metodo para insertar datos en el arbol splay.
+     * @param info
+     */
     public void insertar (int info)
     {
         Nodo nuevo;
@@ -41,7 +54,10 @@ public class SplayTree {
         }
     }
 
-
+    /**
+     * Imprime los valores contenidos en el arbol
+     * @param reco
+     */
     private void imprimirPre (Nodo reco)
     {
         if (reco != null)
@@ -52,12 +68,19 @@ public class SplayTree {
         }
     }
 
+    /**
+     * Llama a la funcion que muestra el recorrido del arbol y le pasa la raiz como nodo inicial.
+     */
     public void imprimirPre ()
     {
         imprimirPre (raiz);
         System.out.println();
     }
 
+    /**
+     * Imprime los valores del arbol variando entre izquierda y derecha.
+     * @param reco
+     */
     private void imprimirEntre (Nodo reco)
     {
         if (reco != null)
@@ -68,13 +91,19 @@ public class SplayTree {
         }
     }
 
+    /**
+     * Llama a la funcion de imprimir entre dandole como nodo inicial la raiz.
+     */
     public void imprimirEntre ()
     {
         imprimirEntre (raiz);
         System.out.println();
     }
 
-
+    /**
+     * Permite imprimir luego izquierda-derecha de cada nodo.
+     * @param reco
+     */
     private void imprimirPost (Nodo reco)
     {
         if (reco != null)
@@ -85,7 +114,9 @@ public class SplayTree {
         }
     }
 
-
+    /**
+     * Llama al imprimir post para que inicie con la raiz.
+     */
     public void imprimirPost ()
     {
         imprimirPost (raiz);

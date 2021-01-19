@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+/// <summary>
+/// Clase se encarga de crear vectores y fuerzas para mover a los personajes. 
+/// Fue creada a partir de una clase tomada como referencia. 
+/// Brackeys, “2D Movement in Unity (Tutorial),” YouTube, 15-Jul-2018. [Online]. Available: https://www.youtube.com/watch?v=dwcT-Dch0bA. 
+/// [Accessed: 13-Dec-2020]. 
+/// </summary>
 public class PlayerMovement : MonoBehaviour
 {
 	[SerializeField] private float m_JumpForce = 400f;                          // Amount of force added when the player jumps.
@@ -20,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
 	private Rigidbody2D m_Rigidbody2D;
 	private bool m_FacingRight = true;  // For determining which way the player is currently facing.
 	private Vector3 m_Velocity = Vector3.zero;
+
 
 	[Header("Events")]
 	[Space]
@@ -39,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
 
 	public bool getGrounded()
     {
-		return m_Grounded;
+		return m_Grounded; 
     }
 
 	public float getJumpForce()
@@ -160,5 +167,7 @@ public class PlayerMovement : MonoBehaviour
 		Vector3 theScale = transform.localScale;
 		theScale.x *= -1;
 		transform.localScale = theScale;
+
+		BroadcastMessage("OnPlayerTurned");
 	}
 }

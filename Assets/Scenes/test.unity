@@ -121,7 +121,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+<<<<<<< HEAD
 --- !u!1 &1364539518
+=======
+--- !u!1 &963949402
+>>>>>>> refs/remotes/origin/main
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -129,9 +133,15 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD
   - component: {fileID: 1364539521}
   - component: {fileID: 1364539520}
   - component: {fileID: 1364539519}
+=======
+  - component: {fileID: 963949405}
+  - component: {fileID: 963949404}
+  - component: {fileID: 963949403}
+>>>>>>> refs/remotes/origin/main
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -139,21 +149,35 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 --- !u!81 &1364539519
+=======
+--- !u!81 &963949403
+>>>>>>> refs/remotes/origin/main
 AudioListener:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 1364539518}
   m_Enabled: 1
 --- !u!20 &1364539520
+=======
+  m_GameObject: {fileID: 963949402}
+  m_Enabled: 1
+--- !u!20 &963949404
+>>>>>>> refs/remotes/origin/main
 Camera:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 1364539518}
+=======
+  m_GameObject: {fileID: 963949402}
+>>>>>>> refs/remotes/origin/main
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
@@ -190,12 +214,17 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+<<<<<<< HEAD
 --- !u!4 &1364539521
+=======
+--- !u!4 &963949405
+>>>>>>> refs/remotes/origin/main
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 1364539518}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
@@ -212,10 +241,22 @@ Transform:
   m_PrefabInstance: {fileID: 8439665517731045423}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8439665517731045423
+=======
+  m_GameObject: {fileID: 963949402}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1694457901
+>>>>>>> refs/remotes/origin/main
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+<<<<<<< HEAD
     m_TransformParent: {fileID: 1364539521}
     m_Modifications:
     - target: {fileID: 3910053321811499473, guid: 7a669fa583d23a449a557acb7676972c,
@@ -229,50 +270,104 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3910053321811499473, guid: 7a669fa583d23a449a557acb7676972c,
+=======
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6227799921529072664, guid: 20148c86859329a48bcd52fd22ce8e5f,
+        type: 3}
+      propertyPath: m_Name
+      value: Kyoko
+      objectReference: {fileID: 0}
+    - target: {fileID: 6227799921529072669, guid: 20148c86859329a48bcd52fd22ce8e5f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 6227799921529072669, guid: 20148c86859329a48bcd52fd22ce8e5f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6227799921529072669, guid: 20148c86859329a48bcd52fd22ce8e5f,
+>>>>>>> refs/remotes/origin/main
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 3910053321811499473, guid: 7a669fa583d23a449a557acb7676972c,
+=======
+    - target: {fileID: 6227799921529072669, guid: 20148c86859329a48bcd52fd22ce8e5f,
+>>>>>>> refs/remotes/origin/main
         type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 3910053321811499473, guid: 7a669fa583d23a449a557acb7676972c,
+=======
+    - target: {fileID: 6227799921529072669, guid: 20148c86859329a48bcd52fd22ce8e5f,
+>>>>>>> refs/remotes/origin/main
         type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 3910053321811499473, guid: 7a669fa583d23a449a557acb7676972c,
+=======
+    - target: {fileID: 6227799921529072669, guid: 20148c86859329a48bcd52fd22ce8e5f,
+>>>>>>> refs/remotes/origin/main
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 3910053321811499473, guid: 7a669fa583d23a449a557acb7676972c,
+=======
+    - target: {fileID: 6227799921529072669, guid: 20148c86859329a48bcd52fd22ce8e5f,
+>>>>>>> refs/remotes/origin/main
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 3910053321811499473, guid: 7a669fa583d23a449a557acb7676972c,
         type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3910053321811499473, guid: 7a669fa583d23a449a557acb7676972c,
+=======
+    - target: {fileID: 6227799921529072669, guid: 20148c86859329a48bcd52fd22ce8e5f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6227799921529072669, guid: 20148c86859329a48bcd52fd22ce8e5f,
+>>>>>>> refs/remotes/origin/main
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 3910053321811499473, guid: 7a669fa583d23a449a557acb7676972c,
+=======
+    - target: {fileID: 6227799921529072669, guid: 20148c86859329a48bcd52fd22ce8e5f,
+>>>>>>> refs/remotes/origin/main
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 3910053321811499473, guid: 7a669fa583d23a449a557acb7676972c,
+=======
+    - target: {fileID: 6227799921529072669, guid: 20148c86859329a48bcd52fd22ce8e5f,
+>>>>>>> refs/remotes/origin/main
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 4018339584359322246, guid: 7a669fa583d23a449a557acb7676972c,
         type: 3}
       propertyPath: m_Name
@@ -280,3 +375,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a669fa583d23a449a557acb7676972c, type: 3}
+=======
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 20148c86859329a48bcd52fd22ce8e5f, type: 3}
+>>>>>>> refs/remotes/origin/main
