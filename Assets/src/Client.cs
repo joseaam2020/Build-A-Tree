@@ -86,10 +86,37 @@ public class Client : MonoBehaviour
                 {
 
                 }
+                if (split[1] == "B")
+                {
+
+                }
+                if (split[1] == "BST")
+                {
+
+                }
+                if (split[1] == "SPLAY")
+                {
+
+                }
             }
             if (split[0] == "TREE")
             {
+                if (split[1] == "AVL")
+                {
 
+                }
+                if (split[1] == "B")
+                {
+
+                }
+                if (split[1] == "BST")
+                {
+
+                }
+                if (split[1] == "SPLAY")
+                {
+
+                }
             }
             if (split[0] == "CWINNER")
             {

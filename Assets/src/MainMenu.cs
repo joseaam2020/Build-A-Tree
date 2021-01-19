@@ -11,7 +11,7 @@ public class MainMenu : MonoBehaviour
     /// <summary>
     /// Carga la siguiente escena 
     /// </summary>
-    public void NextScene()
+    public void OnPlayerJoined()
     {
         Debug.Log("Selected Button");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
