@@ -5,13 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - PlayerManager
-<<<<<<< HEAD
   - old_token
   - new_token
-=======
   - NotPlayer
   - Timer
->>>>>>> refs/remotes/origin/main
   layers:
   - Default
   - TransparentFX
