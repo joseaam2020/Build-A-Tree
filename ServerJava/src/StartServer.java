@@ -56,6 +56,7 @@ public class StartServer implements Runnable{
                     }
                     if (command[0].equals("TOKEN")){
                         //RECIBE TOKEN#JUGADOR#FORMA QUE AGARRO
+                        System.out.println(received);
                         Control.getInstance().verifyToken(Integer.parseInt(command[1]),command[2]);
                         System.out.println("Recibido: "+command[0]);
                     }

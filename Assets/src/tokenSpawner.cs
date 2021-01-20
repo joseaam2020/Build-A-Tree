@@ -1,13 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class tokenSpawner : MonoBehaviour
 {
     // Start is called before the first frame update
     public void Start()
     {
-        Spawn("AVL Tree", 0);
     }
 
     // Update is called once per frame
@@ -28,8 +28,10 @@ public class tokenSpawner : MonoBehaviour
         vector.z = -3;
         var token = Instantiate(tokenHubPrefab);
         token.transform.position = vector;
-        Debug.Log(token.transform.position.x);
+        //Debug.Log(token.transform.position.x);
 
+        TextMeshPro dato = token.gameObject.GetComponentInChildren<TextMeshPro>();
+        dato.text = dato_tkn.ToString();
         tokenHub script = token.GetComponent<tokenHub>();
 
         if (tipo == "BST Tree")

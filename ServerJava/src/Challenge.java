@@ -67,7 +67,7 @@ public class Challenge {
             Control.getInstance().setGoal(num_in);
         }
         Control.getInstance().setShape("CIRCULO");
-        SalidaMSG.getInstance().EnviarMensaje("TREE#AVL");
+        SalidaMSG.getInstance().EnviarMensaje("TREE#AVL#15");
 
     }
 
@@ -101,7 +101,7 @@ public class Challenge {
             Control.getInstance().setGoal(num_in);
         }
         Control.getInstance().setShape("ROMBO");
-        SalidaMSG.getInstance().EnviarMensaje("TREE#BST");
+        SalidaMSG.getInstance().EnviarMensaje("TREE#BST#11");
     }
 
     /**
@@ -135,7 +135,7 @@ public class Challenge {
             Control.getInstance().setGoal(num_in);
         }
         Control.getInstance().setShape("CUADRADO");
-        SalidaMSG.getInstance().EnviarMensaje("TREE#B");
+        SalidaMSG.getInstance().EnviarMensaje("TREE#B#13");
 
     }
 
@@ -169,7 +169,7 @@ public class Challenge {
             Control.getInstance().setGoal(num_in);
         }
         Control.getInstance().setShape("TRIANGULO");
-        SalidaMSG.getInstance().EnviarMensaje("TREE#SPLAY");
+        SalidaMSG.getInstance().EnviarMensaje("TREE#SPLAY#12");
     }
 
 }

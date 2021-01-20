@@ -5,6 +5,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Threading;
 using TMPro;
+using System;
 
 public class Client : MonoBehaviour
 {
@@ -13,12 +14,29 @@ public class Client : MonoBehaviour
     private static Client instance;
     private Thread listen;
 
-    public GameObject timer;
+    private GameObject timer;
     private TextMeshProUGUI time;
     private string newTime = "";
+
+    public GameObject tokenSpawnerPrefab;
+    private tokenSpawner spawner;
+    private bool SpawnAVL = false;
+    private bool SpawnB = false;
+    private bool SpawnBST = false;
+    private bool SpawnSPLAY = false;
+    public string currentTree;
+    public int maxTokenValue;
+    public bool arbolActualizado = false;
+
+    public GameObject[] datosJugador;
+    public bool llamadaTree = false;
    
     void Awake()
     {
+        listen = new Thread(Listener);
+
+        datosJugador = GameObject.FindGameObjectsWithTag("DatosJugador");
+
         if (instance == null)
         {
             instance = this;
@@ -33,17 +51,52 @@ public class Client : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SendMSG("GETCHALLENGE#1");       
-        listen = new Thread(Listener);
         listen.Start();
+        SendMSG("GETCHALLENGE#1");       
 
         timer = GameObject.FindGameObjectWithTag("Timer");
         time = timer.gameObject.GetComponent(typeof(TextMeshProUGUI)) as TextMeshProUGUI;
+
+        var TokenSpawner = Instantiate(tokenSpawnerPrefab);
+        spawner = TokenSpawner.gameObject.GetComponent(typeof(tokenSpawner)) as tokenSpawner;
+
     }
 
     private void Update()
     {
+        if (llamadaTree)
+        {
+            foreach (GameObject datos in datosJugador)
+            {
+                DatosJugador script = datos.GetComponent<DatosJugador>();
+                script.setActiveArbol(currentTree);
+                TextMeshPro textoArbol = datos.GetComponentInChildren<TextMeshPro>();
+                textoArbol.text = currentTree;
+            } llamadaTree = false;
+        }
+
         time.SetText(newTime);
+
+        if (SpawnAVL)
+        {
+            spawner.Spawn("AVL Tree", UnityEngine.Random.Range(0, maxTokenValue));
+            SpawnAVL = false;
+        }
+        if (SpawnB)
+        {
+            spawner.Spawn("B Tree", UnityEngine.Random.Range(0, maxTokenValue));
+            SpawnB = false;
+        }
+        if (SpawnBST)
+        {
+            spawner.Spawn("BST Tree", UnityEngine.Random.Range(0, maxTokenValue));
+            SpawnBST = false;
+        }
+        if (SpawnSPLAY)
+        {
+            spawner.Spawn("Splay Tree", UnityEngine.Random.Range(0, maxTokenValue));
+            SpawnSPLAY = false;
+        }
     }
 
     private void OnDisable()
@@ -55,6 +108,8 @@ public class Client : MonoBehaviour
     {
         return instance;
     }
+
+
 
     public void Listener()
     {
@@ -84,52 +139,39 @@ public class Client : MonoBehaviour
             {
                 if(split[1]== "AVL")
                 {
-
+                    SpawnAVL = true;
                 }
                 if (split[1] == "B")
                 {
-
+                    SpawnB = true;
                 }
                 if (split[1] == "BST")
                 {
-
+                    SpawnBST = true;
                 }
                 if (split[1] == "SPLAY")
                 {
-
+                    SpawnSPLAY = true;
                 }
             }
             if (split[0] == "TREE")
             {
-                if (split[1] == "AVL")
-                {
-
-                }
-                if (split[1] == "B")
-                {
-
-                }
-                if (split[1] == "BST")
-                {
-
-                }
-                if (split[1] == "SPLAY")
-                {
-
-                }
-            }
-            if (split[0] == "CWINNER")
-            {
-
+                Debug.Log("Done");
+                currentTree = split[1];
+                maxTokenValue = Int32.Parse(split[2]);
+                llamadaTree = true;
             }
 
-            Debug.Log("Client received: " + rcv);
+            //Debug.Log("Client received: " + rcv);
 
         }
     }
 
     public void SendMSG(string toSend)
     {
+
+        listen.Abort();
+
         clientSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
         serverAddress = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 5100);
         clientSocket.Connect(serverAddress);
@@ -141,6 +183,9 @@ public class Client : MonoBehaviour
         clientSocket.Send(toSendLenBytes);
         clientSocket.Send(toSendBytes);
         Debug.Log("Mensaje Enviado: " + toSend);
+
+        Thread newListen = new Thread(Listener);
+        newListen.Start();
     }
 
 }

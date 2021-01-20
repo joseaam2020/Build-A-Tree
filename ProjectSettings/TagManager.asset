@@ -9,6 +9,7 @@ TagManager:
   - new_token
   - NotPlayer
   - Timer
+  - ClientSocket
   layers:
   - Default
   - TransparentFX
